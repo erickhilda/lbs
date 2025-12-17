@@ -5,6 +5,12 @@
   "private": true,
   "scripts": {
     "start": "bun run src/index.ts",
+    "build": "bun build --compile --minify --sourcemap src/index.ts --outfile library",
+    "build:linux": "bun build --compile --minify --target=bun-linux-x64 src/index.ts --outfile library-linux",
+    "build:mac": "bun build --compile --minify --target=bun-darwin-x64 src/index.ts --outfile library-mac",
+    "build:mac-arm": "bun build --compile --minify --target=bun-darwin-arm64 src/index.ts --outfile library-mac-arm",
+    "build:windows": "bun build --compile --minify --target=bun-windows-x64 src/index.ts --outfile library.exe",
+    "build:all": "bun run build:linux && bun run build:mac && bun run build:mac-arm && bun run build:windows",
     "test": "bun test --preload ./tests/setup.ts"
   },
   "devDependencies": {
@@ -14,6 +20,7 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "commander": "^14.0.2",
     "effect": "^3.19.12"
   }
 }
