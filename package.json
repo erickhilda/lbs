@@ -3,6 +3,10 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "test": "bun test --preload ./tests/setup.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },

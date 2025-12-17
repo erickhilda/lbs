@@ -6,22 +6,22 @@ Technology stack: Bun + Typescript + SQLite
 ## M-1 - Project Setup
 
 ### Task:
-- [ ] Initialize project with Bun
-- [ ] Set up Typescript configuration
-- [ ] Install necessary dependencies
-- [ ] Create SQLite database schema
-- [ ] Set up Bun test runner
+- [x] Initialize project with Bun
+- [x] Set up Typescript configuration
+- [x] Install necessary dependencies
+- [x] Create SQLite database schema
+- [x] Set up Bun test runner
 
 ### Deliverables:
-- [ ] Project setup complete
-- [ ] Typescript configuration set up
-- [ ] Dependencies installed
-- [ ] SQLite database schema created
+- [x] Project setup complete
+- [x] Typescript configuration set up
+- [x] Dependencies installed
+- [x] SQLite database schema created
 
 ## M-2: Core Domain Models
 
 ### Task:
-- [ ] Create `Book` class with properties: id, title, author, isAvailable
+- [x] Create `Book` class with properties: id, title, author, isAvailable
 - [ ] Create `Member` class with properties: id, name, borrowedBooks
 - [ ] Create `BorrowRecord` class with properties: id, bookId, memberId, borrowDate, returnDate
 - [ ] Write unit tests for domain models
