@@ -13,10 +13,10 @@ function clearDatabase() {
   db.run("DELETE FROM sqlite_sequence WHERE name='members'");
 }
 
-beforeEach(async () => {
+beforeEach(() => {
   clearDatabase();
 });
 
-afterAll(async () => {
+afterAll(() => {
   db.close();
 });

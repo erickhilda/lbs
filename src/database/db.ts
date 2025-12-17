@@ -8,7 +8,7 @@ export function initializeDb() {
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       title TEXT NOT NULL,
       author TEXT NOT NULL,
-      is_available INTEGER NOT NULL DEFAULT 1
+      is_available INTEGER DEFAULT 1
     )
   `);
 
@@ -25,7 +25,7 @@ export function initializeDb() {
       book_id INTEGER NOT NULL,
       member_id INTEGER NOT NULL,
       borrow_date TEXT NOT NULL,
-      return_date TEXT NOT NULL,
+      return_date TEXT,
       FOREIGN KEY (book_id) REFERENCES books(id),
       FOREIGN KEY (member_id) REFERENCES members(id)
     )
