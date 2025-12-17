@@ -22,7 +22,7 @@ export class UtilService {
         const totalMembers = (totalMembersStmt.get() as any).count;
 
         const activeBorrowingsStmt = db.prepare(
-          "SELECT COUNT(*) as count FROM borrowings WHERE return_date IS NULL",
+          "SELECT COUNT(*) as count FROM borrow_records WHERE return_date IS NULL",
         );
         const activeBorrowings = (activeBorrowingsStmt.get() as any).count;
 
