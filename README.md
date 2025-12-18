@@ -2,7 +2,7 @@
 
 A modern library management system built with TypeScript, featuring type-safe error handling and a clean OOP architecture. This system allows you to manage books, members, and borrowing operations with built-in business rules enforcement.
 
-## 🚀 Features
+## Features
 
 - **Book Management**: Add, search, and track book availability
 - **Member Management**: Register and manage library members
@@ -12,7 +12,7 @@ A modern library management system built with TypeScript, featuring type-safe er
 - **Type-Safe Error Handling**: Leverages Effect library for functional error management
 - **Comprehensive Testing**: Full test suite covering all major behaviors
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Runtime**: [Bun](https://bun.sh/) - Fast all-in-one JavaScript runtime
 - **Language**: TypeScript - Type-safe JavaScript
@@ -20,7 +20,7 @@ A modern library management system built with TypeScript, featuring type-safe er
 - **Database**: SQLite (bun:sqlite) - Embedded, serverless database
 - **Testing**: Bun's built-in test runner
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 lbs/
@@ -43,7 +43,7 @@ lbs/
 └── tsconfig.json
 ```
 
-## 🚦 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -69,7 +69,7 @@ bun run start
 
 The SQLite database will be automatically created with the necessary tables.
 
-## 🎮 Usage
+## Usage
 
 ### Running the Application
 
